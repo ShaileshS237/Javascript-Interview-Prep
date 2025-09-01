@@ -46,12 +46,15 @@ class LinkedList {
 
     print() {
         let current = this.head;
+        let count = 1;
         let result = "";
         while (current) {
+            count++;
             result += current.value + "->"
             current = current.next;
         }
         console.log(result + "null");
+        console.log(count)
     }
 }
 
